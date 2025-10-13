@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+.button-has-icon-only {/*
+  min-width: 0px !important;
+  min-height: 0px !important;
+
+  --border-radius: 50% !important;
+  --padding-start: 0 !important;
+  --padding-end: 0 !important;
+  --padding-top: 0 !important;
+  --padding-bottom: 0 !important;*/
+}
+ion-input ion-button {
+  margin-inline-start: 0 !important;
+}
+.input-clear-icon ion-icon{
+  @apply !w-6 !h-6;
+}
+.input-clear-icon{
+  @apply !w-6 !h-6;
+}
+@source "../"
