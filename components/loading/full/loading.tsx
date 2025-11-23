@@ -1,5 +1,5 @@
 import { memo } from "react";
-import "./style.css";
+// import "./style.css";
 
 const Loading: React.FC<{ className?: string }> = ({
   className,

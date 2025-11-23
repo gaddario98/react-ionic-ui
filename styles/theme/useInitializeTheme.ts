@@ -1,5 +1,5 @@
 import { useCallback, useEffect } from "react";
-import { useThemeState } from "@gaddario98/react-ionic-ui";
+import { useThemeState } from "./themeState";
 
 export const useInitializeTheme = () => {
   const [{ theme }, setTheme] = useThemeState();
@@ -37,7 +37,7 @@ export const useInitializeTheme = () => {
         onThemeModeChange(mediaQuery, "light")
       );
     };
-  }, []);
+  }, [onThemeModeChange]);
 
   const getThemeFromLink = useCallback(() => {
     const themeLink = document.getElementById("theme-link");
